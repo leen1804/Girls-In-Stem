@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import "./styles.css";
+import "../styles/style.css";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
-import Headings from "./styled/Headings";
+import Headings from "../styled/Headings";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

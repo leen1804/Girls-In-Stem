@@ -1,23 +1,22 @@
-import About from "./About";
-import Banner from "./Banner";
-import Call from "./Call";
-import Cards from "./Cards";
-import Dis from "./Dis";
-import Get from "./Get";
-import Loc from "./Loc";
-import Visionaries from "./Visionaries";
-import Suu from "./Suu";
-import Header from "./Header";
 
+import Header from './components/Header'
+import Banner from './components/Banner'
+import Cards from './components/Cards'
+import About from './components/About'
+import Visionaries  from './components/Visionaries'
+import Call from './components/Call'
+import Dis from './components/Dis'
+import Get from './components/Get'
+import Loc from './components/Loc'
 function App() {
   return (
     <>
     <Header/>
-      <Banner />
-       <Cards />
+      <Banner/>
+       <Cards/>
        {/* <Suu/> */}
     <About />
-       <Visionaries />
+       <Visionaries/>
      <Call />
    <Dis/>
          <Get/>

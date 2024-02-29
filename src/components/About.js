@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import "./styles.css";
+import "../styles/style.css";
 
 const Wrapper = styled.section`
   height: 100vh;

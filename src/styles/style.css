@@ -187,7 +187,7 @@ p{
   animation: moveY 1.5s infinite;
 }
 .cards{
-  background-image:url(../public/LooperGroup.png) ;
+  background-image:url(./LooperGroup.png) ;
   padding:80px;
   margin-bottom: 5rem;
   align-items: center;

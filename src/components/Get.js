@@ -5,7 +5,7 @@ import { FiFacebook } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa6";
 import { FiTwitter } from "react-icons/fi";
 import { LuLinkedin } from "react-icons/lu";
-import Headings from "./styled/Headings";
+import Headings from "../styled/Headings";
 const Wrapper = styled.section`
   padding: 95px 10px;
   @media (max-width: 1025px) {
