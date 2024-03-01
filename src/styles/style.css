@@ -278,11 +278,13 @@ bottom:23%;
 .big{
   @media (max-width: 1025px) {
     display:none;
+    color: aquamarine;
   }
 }
 .small{
   @media (min-width: 1200px) {
     display:none;
+    color: yellow;
   }
   
 }
