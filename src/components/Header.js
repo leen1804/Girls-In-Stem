@@ -8,10 +8,9 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0;
-    position:fixed;
-    width:100%;
+    width: 100%;
   }
-  /* padding: 10px; */
+ 
   background: white;
 
   img {
@@ -47,19 +46,34 @@ const Wrapper = styled.div`
     margin-left: 0;
     padding: 0px;
     overflow: hidden;
-    background: violet;
+    background: white;
 
     @media (min-width: 1200px) {
       justify-content: flex-start;
       max-height: 100%;
       top: 18%;
     }
-    .a {
+    a {
+      position: relative;
       padding: 20px;
       font-size: 17px;
+      color: black;
+      text-decoration: none;
     }
-    .a:hover {
-      background: #01ffff;
+
+    a:hover::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background: #06bcd5;
+      top: 49%;
+      left: 0;
+
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      color: #06bcd5;
     }
     @media (min-width: 992px) {
       position: relative;
@@ -151,13 +165,27 @@ function Burger() {
           <span></span>
         </div>
         <ul className={checked ? "menu change" : "menu"}>
-          <li className="a">Home</li>
-          <li className="a">About  Us</li>
-          <li className="a">Gallery</li>
-          <li className="a">Blog</li>
-          <li className="a">Our Programs</li>
-          <li className="a">Opportunities</li>
-          <li className="a">Donate</li>
+          <li className="a">
+            <a href="">Home</a>
+          </li>
+          <li className="a">
+            <a href="">About Us</a>
+          </li>
+          <li className="a">
+            <a href="">Gallery</a>
+          </li>
+          <li className="a">
+            <a href="">Blog</a>
+          </li>
+          <li className="a">
+            <a href="">Our Programs</a>
+          </li>
+          <li className="a">
+            <a href="">Opportunities</a>
+          </li>
+          <li className="a">
+            <a href="">Donate</a>
+          </li>
         </ul>
       </div>
     </Wrapper>

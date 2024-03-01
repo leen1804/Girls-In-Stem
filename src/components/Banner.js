@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/style.css";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import { motion } from "framer-motion";
-
+ 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = ["banner.jpg", "/Asset-1.png", "banner.jpg"];
