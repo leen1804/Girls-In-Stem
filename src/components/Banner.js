@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "../styles/style.css";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
- 
+import styled from "styled-components";
+
+const Wrapper = styled.section`
+.th{
+  
+    @media (max-width: 600px) {
+     display:none;
+    }
+}
+`
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = ["banner.jpg", "/Asset-1.png", "banner.jpg"];
@@ -50,6 +59,7 @@ const HeroSection = () => {
   };
 
   return (
+    <Wrapper>
     <div
       className="hero-section"
       style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
@@ -93,6 +103,7 @@ const HeroSection = () => {
         </a>
       </div>
     </div>
+    </Wrapper>
   );
 };
 
